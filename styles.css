@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  font-family: "Frijole", cursive;
+}
+
+header img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.cabecalho-input {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #1f5721;
+  transition: 0.3s;
+}
+
+.messages {
+  margin-top: 10px;
+}
+
+.message-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.message-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.message-success button {
+  background-color: #155724;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #ccc;
+}
+
+.message-success button:hover {
+  background-color: #07a12b;
+  transition: 0.3s;
+}
+
+.message-error button {
+  background-color: #721c24;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #ccc;
+}
+
+.message-error button:hover {
+  background-color: #f0192e;
+  transition: 0.3s;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+tfoot th {
+  background-color: #4caf50;
+}

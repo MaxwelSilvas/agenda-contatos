@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frijole&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/agenda.png" alt="icone de agenda" />
+        <h1>Agenda de Contatos</h1>
+      </header>
+      <form id="form-contacts" class="cabecalho-input">
+        <div class="input-group">
+          <input
+            id="nome-contato"
+            type="text"
+            required
+            placeholder="Nome do contato"
+          />
+          <input
+            id="numero-contato"
+            type="number"
+            required
+            placeholder=" 99 9 9999-9999"
+            min="0"
+            max="99999999999"
+          />
+          <button type="submit">Adicionar +</button>
+        </div>
+        <div class="messages">
+          <p class="message-success" id="mensagem-sucesso">
+            Número adicionado com sucesso!
+            <button id="fechar-sucesso">&check;</button>
+          </p>
+          <p class="message-error" id="mensagem-erro">
+            Número já adicionado! <button id="fechar-erro">&check;</button>
+          </p>
+        </div>
+      </form>
+      <table cellspacing="0">
+        <thead class="table">
+          <tr>
+            <th>Nome do contato</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo"></tbody>
+        <tfoot class="table">
+          <tr>
+            <th>Quantidade contatos:</th>
+            <th id="quantidade-contatos">0</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
